@@ -20,7 +20,7 @@ def say_hurray_three_times():
 
 
 
-
+'''
 # Передача параметров напрямую без переменных
 def get_last_char(Hexlet) -> str:
     return Hexlet[-1]  # Возвращает последний символ строки, переданной в качестве параметра
@@ -39,3 +39,4 @@ def truncate(text, length):
     if len(text) > length:
         return text[:length] + '...'
     return text #zaebalc2
+'''
