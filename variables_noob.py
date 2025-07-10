@@ -1,14 +1,11 @@
 '''
 euros_count = 100
-# BEGIN (write your solution here)
 euros_count = 100
 dollars_count = euros_count * 1.25
 print(dollars_count)
-
 yuans_per_dollar = 6.91
 yuans_count = dollars_count * yuans_per_dollar
 print(yuans_count)
-# END
 '''
 
 
@@ -18,36 +15,25 @@ intro = "Here is important information about your account security."
 
 first_name = "Joffrey!"
 greeting = "Hello, "
-
-# BEGIN (write your solution here)
 print(greeting + first_name)
 print(intro + "\n" + info)
-# END
 
 
 #ANOTHER OPTION
-
 info = "We couldn't verify your mother's maiden name."
 intro = "Here is important information about your account security."
-
 first_name = "Joffrey!"
 greeting = "Hello, "
-
-# BEGIN (write your solution here)
 print(greeting + first_name)
 print(intro + "\n" + info)
-# END
 
 '''
 
 
 '''
 stark = "Arya"
-
-# BEGIN (write your solution here)
 dinner = f'Do you want to eat, {stark}?'
 print(dinner)
-# END
 
 
 #ANOTHER OPTION
@@ -60,20 +46,15 @@ print(f"Do you want to eat, {stark}?")
 
 '''
 name = "Na\nharis"
-
-# BEGIN (write your solution here)
 print(name[0]) # print(name[2:5])
-# END
 '''
 
 
 '''
-# BEGIN (write your solution here)
 text = """Lannister, Targaryen, Baratheon, Stark, Tyrell...
 they're all just spokes on a wheel.
 This one's on top, then that one's on top, and on and on it spins,
 crushing those on the ground."""
-# END
 
 print(text)
 '''
@@ -99,12 +80,8 @@ print(result)
 
 
 value = 2.9
-
-# BEGIN (write your solution here)
 int_value = int(value)
 print(f'{str(int_value)} times')
-
-# END
 
 
 '''
@@ -118,10 +95,7 @@ print(result)  # => 8
 
 '''
 number = 10.1234
-
-# BEGIN (write your solution here)
 print(round(number, 2))
-# END
 '''
 
 
@@ -130,22 +104,16 @@ print(round(number, 2))
 
 '''
 text = "Never forget what you are, for surely the world will not"
-
-# BEGIN (write your solution here)
 print(f'First: {text[0]}') 
 print(f'First: {text[-1]}') 
-# END
 '''
 
 '''
 #Или так
 text = "Never forget what you are, for surely the world will not"
-
-# BEGIN
 result = f"First: {text[0]}\nLast: {text[-1]}"
 print(result) #First: N 
               #Last:t
-# END
 '''
 
 
@@ -225,11 +193,7 @@ print(f"Index Of N: {text.find('N')}\nIndex Of ,: {text.find(',')}")  #N,',' = 0
 
 
 
-'''
-#Яхуйзнает че это
-text = "When \t\n you play a \t\n game of thrones you win or you die."
-print(len(text[4:15].strip()))
-'''
+
 
 
 
