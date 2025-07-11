@@ -20,7 +20,7 @@ def say_hurray_three_times():
 
 
 
-'''
+
 # Передача параметров напрямую без переменных
 def get_last_char(Hexlet) -> str:
     return Hexlet[-1]  # Возвращает последний символ строки, переданной в качестве параметра
@@ -33,7 +33,7 @@ get_last_char(name2)  # o
     #ИЛИ 
 #                              round(10.23456, 3) # 10.235
 
-
+'''
 #'google'.replace('go', 'mo')  # moogle replace заменяет часть строки на другую строку(    def replace(text, from, to):   )
 def truncate(text, length):
     if len(text) > length:
