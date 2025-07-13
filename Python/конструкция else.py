@@ -1,0 +1,114 @@
+'''
+
+
+Теперь изменим функцию из предыдущего урока так, чтобы она возвращала не просто тип предложения, а целую строку Sentence is normal или Sentence is question:
+
+def get_type_of_sentence(sentence):
+    last_char = sentence[-1]
+
+    if last_char == '?':
+        sentence_type = 'question'
+    else:
+        sentence_type = 'normal'
+
+    return "Sentence is " + sentence_type
+
+print(get_type_of_sentence('Hodor'))   # => 'Sentence is normal'
+print(get_type_of_sentence('Hodor?'))  # => 'Sentence is question'
+
+
+
+'''
+
+'''
+
+
+Мы добавили else и новый блок. Он выполнится, если условие в if — ложь. Еще в блок else можно вкладывать другие условия if. Else переводится «иначе», «в ином случае».
+
+Пример вложенных блоков:
+
+number = 10
+
+if number > 10:
+    print("Number is greater than 10")
+else:
+    if number == 10:
+        print("Number is exactly 10")
+    else:
+        print("Number is less than 10")
+        
+
+
+'''
+
+
+
+'''
+
+
+'Оформить конструкцию if-else можно двумя способами. С помощью отрицания можно изменить порядок блоков:
+
+def get_type_of_sentence(sentence):
+    last_char = sentence[-1]
+
+    if last_char != '?':
+        sentence_type = 'normal'
+    else:
+        sentence_type = 'question'
+
+    return "Sentence is " + sentence_type
+
+Чтобы конструкцию было легче оформлять, старайтесь выбирать проверку без отрицаний и подстраивайте содержимое блоков под нее.
+
+На примере использования else видно, как важно не забывать отделять блоки.
+
+# Неправильно
+def check_number(number):
+    if number > 0:
+        print("Число положительное")
+    if number > 10:
+        print("Число больше 10")
+    else:
+        print("Число не положительное")
+
+check_number(3)
+# => Число положительное
+# => Число не положительное
+
+В примере выше мы забыли "вложить" с помощью отступа второй if, потому else теперь относится к нему, а не первому if.
+
+# Правильно
+def check_number(number):
+    if number > 0:
+        print("Число положительное")
+        if number > 10:
+            print("Число больше 10")
+    else:
+        print("Число не положительное")
+
+check_number(3)
+# => Число положительное
+
+Теперь второй if вложен в первый, а else на одном уровне с первым и противопоставляется ему.
+
+
+'''
+
+
+def normalize_url(url):
+    if url.startswith('https://'):
+        return url
+    elif url.startswith('http://'):
+        return 'https://' + url[len('http://'):]
+    else:
+        return 'https://' + url
+    
+    
+    
+    #
+    # 
+    #    Конструкция elif в Python используется для проверки дополнительного условия, 
+    #    если предыдущее условие if оказалось ложным. В вашем коде elif url.startswith('http://'): 
+    #    проверяет, начинается ли URL с http://, только если условие if url.startswith('https://'): оказалось ложным. 
+    #    Если оба эти условия ложны, выполняется блок else. Таким образом, elif позволяет проверять несколько условий 
+    #    последовательно и выполнять соответствующий код для первого истинного условия.
