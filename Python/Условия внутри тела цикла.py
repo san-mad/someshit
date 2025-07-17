@@ -6,5 +6,4 @@ def count_chars_ignore_case(text, char):
         if c == char:
             count += 1
     return count
-    print(count_chars_ignore_case('Abracadabra', 'a')) 
 print(count_chars_ignore_case('Abracadabra', 'A'))
