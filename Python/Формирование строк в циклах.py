@@ -44,7 +44,7 @@ reverse_string('')  # ''
     #index = index - 1 — обновляем счетчик
     
     #return reversed_string — когда цикл завершился, возвращаем строку-результат
-
+'''
 
 
 #Task
@@ -57,3 +57,6 @@ def my_substr(string, length):
         result = result + current_char
         index = index + 1
     return result
+    
+    
+    '''

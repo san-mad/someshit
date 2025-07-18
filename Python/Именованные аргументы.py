@@ -18,3 +18,6 @@ def trim_and_repeat(text, offset=0, repetitions=1):
 начиная с позиции offset, и повторять обрезанную часть repetitions раз. 
 Если offset и repetitions не указаны, они должны иметь значения по умолчанию 0 и 1 соответственно.
 '''
+def trim_and_repeat(text, offset=0, repetitions=4):
+    return text[offset:] * repetitions
+print(trim_and_repeat('Pythhhon'))

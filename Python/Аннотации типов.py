@@ -16,3 +16,4 @@ def double(n: int) -> int:
 '''
 def word_multiply(text: str, count: int) -> str:
     return text * count
+print(word_multiply('Python ', 2))
