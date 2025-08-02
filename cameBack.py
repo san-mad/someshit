@@ -1,6 +1,5 @@
-numb1 = int(input("Enter a number: "))
-numb2 = int(input("Enter another number: "))
-if numb1 > numb2:
-    print(numb1, "is greater than", numb2)
+number = input("Type a number: " )
+if number == str(5):
+    print("You entered five.")
 else:
-    print(numb2, "is greater than", numb1)
+    print("unvalid number")
