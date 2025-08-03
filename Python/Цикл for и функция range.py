@@ -54,5 +54,5 @@ for i in range(3, 0, -1):
 '''         
 
 def print_table_of_squares(first, last):
-    for i in range(first, last + 1):
-        print(f"{i}^2 = {i ** 2}")
+    for pop in range(first, last + 1):
+        print(f"{pop^2} = {pop ** 2}")
