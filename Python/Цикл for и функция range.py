@@ -53,6 +53,6 @@ for i in range(3, 0, -1):
     print(i)
 '''         
 
-def print_table_of_squares(first, last):
-    for pop in range(first, last + 1):
-        print(f"{pop^2} = {pop ** 2}")
+for i in "i hate you":
+    if i == " ":
+        print("Symbol found:", i)
