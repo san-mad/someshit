@@ -11,7 +11,7 @@ def get_info_by_ip(ip):
             '[organization]' : response.get('org'),
             '[city]' : response.get('city'),
             '[region]' : response.get('region'),
-            '[zip]' : response.get('zip'),
+            '[zip]' : response.get('postal'),
             '[country]' : response.get('country'),
             '[lat]' : float(loc[0]),
             '[lon]' : float(loc[1]),
@@ -21,7 +21,7 @@ def get_info_by_ip(ip):
             print(f"{k} : {v}")
             
         area = folium.Map(location=[data['[lat]'], data['[lon]']])
-        area.save(f"{response.get('ip')}_{response.get('city')}.html")
+                          #this function  disabled     #area.save(f"{response.get('ip')}_{response.get('city')}.html")
             
     except requests.exceptions.ConnectionError:
         print("Connection error. Please check your internet connection.")
