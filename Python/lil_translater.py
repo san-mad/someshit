@@ -15,7 +15,7 @@ if __name__ == "__main__":
             user_text = input("Введите текст для перевода (или 'q' для выхода): ")
             if user_text.strip().lower() == "q":
                 print("Выход.")
-                exit(0)
+                exit()
             try:
                 print("Перевод:", translate_text(user_text, dest=target_lang))
             except Exception as e:
