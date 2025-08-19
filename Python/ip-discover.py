@@ -28,7 +28,7 @@ def get_info_by_ip(ip):
         
 def main():
     preview_text = Figlet(font='slant')
-    print(preview_text.renderText('asscracker'))
+    print(preview_text.renderText('IPD'))
     ip = input("Enter an IP address: ")
     get_info_by_ip(ip=ip)
 if __name__ == "__main__":
