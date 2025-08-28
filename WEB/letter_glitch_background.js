@@ -1,14 +1,11 @@
-
-// Глитч-буквы для обычного HTML
-// Глитч-буквы для обычного HTML
 (function () {
   // Настройки
-  const glitchColors = ['#099132ff', '#00ff15ff', '#0c7c00ff'];
-  const glitchSpeed = 0;
+  const glitchColors = ['#00b406ff', '#08f10049', '#004b258e'];
+  const glitchSpeed = 90;
   const smooth = true;
-  const fontSize = 18;
-  const charWidth = 10;1
-  const charHeight = 20;
+  const fontSize = 16;
+  const charWidth = 8;1
+  const charHeight = 16;
   const lettersAndSymbols = [
     'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J',
     'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T',
@@ -67,9 +64,9 @@
   // Основная логика
   let canvas, ctx, grid, letters, lastGlitchTime, animationFrame;
   // Для "дождика" из надписей 'lain'
-  const lainCount = 30
-  const lainFontSize = 24;
-  const lainAlpha = 0.6;
+  const lainCount = 0
+  const lainFontSize = 16;
+  const lainAlpha = 2;
   let lainDrops = [];
   function initializeLainDrops() {
     lainDrops = [];
@@ -147,7 +144,7 @@
     let needsRedraw = false;
     for (let i = 0; i < letters.length; i++) {
       if (letters[i].colorProgress < 1) {
-        letters[i].colorProgress += 0.05;
+        letters[i].colorProgress += 0.07;
         if (letters[i].colorProgress > 1) letters[i].colorProgress = 1;
         const startRgb = hexToRgb(letters[i].color);
         const endRgb = hexToRgb(letters[i].targetColor);
